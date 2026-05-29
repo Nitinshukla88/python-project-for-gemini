@@ -8,6 +8,7 @@ pipeline {
               */ 
               echo 'building the application'
               echo 'built the application'  
+              echo 'jenkinsfile for practice'
             }
         }
         stage("test") {
