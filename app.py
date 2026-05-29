@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-users = {"nitin" : "shukla", "divyansh" : "vijay"}
+users = {"nitin" : "shukla", "divyansh" : "vijay", "trishak" : "jaiswal"}
 
 @app.get("/")
 def hello():
