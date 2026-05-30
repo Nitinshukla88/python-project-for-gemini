@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+        label 'Slave1'
+    }
     parameters {
         // This is where you define the parameters to include the extra functionality
     }
