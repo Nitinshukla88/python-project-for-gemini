@@ -1,12 +1,14 @@
 pipeline {
-    agent any 
+    agent {
+        label 'Slave1'
+    }
     parameters {
         // This is where you define the parameters to include the extra functionality
     }
     environment {
         // here you define the environment variables 
         NEW_VERSION = '1.3.0'
-        SERVER_CREDENTIALS = credentials('<here you pass the ID of the credentials in single quote, it's important>)
+        SERVER_CREDENTIALS = credentials('<here you pass the ID of the credentials in single quote, its important>')
     }
     tools {
         // here you define the tools which helps you in build process like maven, npm etc.
